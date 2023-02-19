@@ -15,9 +15,7 @@ We downloaded ETH/USDT hourly prices data for the last 2 years from binance usin
 
 ## Processing and Prediction
 
-We further ran data through prophet to obtain time series predictions. Check `get-predictions.ipynb`.
-
-Also [Kaggle Notebook](https://www.kaggle.com/pavfedotov/predict-eth-price).
+We further ran data through prophet to obtain time series predictions. Check `get-predictions.ipynb` and also [Kaggle Notebook](https://www.kaggle.com/pavfedotov/predict-eth-price).
 
 Next, we uploaded data to bundlr with `upload.py`. Uploaded data to ocean with `upload_to_ocean.py`. And sent the data to judges via `send_to_judges.py`.
 
