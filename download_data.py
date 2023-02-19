@@ -8,12 +8,12 @@ api_key = os.getenv('API_KEY')
 api_secret = os.getenv('API_SECRET_KEY')
 client = Client(api_key, api_secret)
 
-#ETHBTC ETHUSDT
-SYMBOL = "ETHEUR"
-# 1m 5m 15m
+SYMBOL = "ETHUSDT"
+
+# 1m 5m 15m 1d
 INTERVAL='1m'
 
-klines = client.get_historical_klines(SYMBOL, INTERVAL, "1 Jan,2021")
+klines = client.get_historical_klines(SYMBOL, INTERVAL, "2022-12-11 20:03:00")
 data = pd.DataFrame(klines)
  # create colums name
 data.columns = ['open_time','open', 'high', 'low', 'close', 'volume','close_time',
