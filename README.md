@@ -1,26 +1,18 @@
 # ETH Price: Round Three
 
-[The Challenge Readme](https://github.com/oceanprotocol/predict-eth/blob/main/challenges/main3.md)
+[The Challenge Readme](https://github.com/oceanprotocol/predict-eth/blob/main/challenges/main4.md)
 
-[The Challenge on Desights](https://desights.ai/g/challenge/1)
+[The Challenge on Desights](https://desights.ai/challenge/4)
 
-`INFO:ocean:Successfully created NFT with address 0x17e4a572D9cA398f66070Fed842FF819f5B689b0.
-INFO:ocean:Successfully created datatoken with address 0x222F74ad94C3d9C1673bb43FE611c8E456082b7C.`
+Datatoken: 0x96B72c17DbEDd6905326fccbEA48a931cE99581D
 
-[Arweave prediction saved](https://arweave.net/WFpfNY0gXVxkTCT9aBTqgVlVWlY0WwpcA17G8sGlVSY)
+[Arweave prediction saved](https://arweave.net/na9u74yh5gHXEeEwKW9FP7zFHvYdXIjqKPfAXsfhlLc)
 
 ## Input data
 
-We downloaded ETH/USDT hourly prices data for the last 2 years from binance using `download_data.py`.
+We downloaded ETH/USDT hourly prices data for the last 1000 observations years from  ocean.
 
 ## Processing and Prediction
 
-We further ran data through prophet to obtain time series predictions. Check `get-predictions.ipynb` and also [Kaggle Notebook](https://www.kaggle.com/pavfedotov/predict-eth-price).
-
+We further ran data through neural prophet to obtain time series predictions. Check `get-predictions.ipynb`.
 Next, we uploaded data to bundlr with `upload.py`. Uploaded data to ocean with `upload_to_ocean.py`. And sent the data to judges via `send_to_judges.py`.
-
-## Further Research
-
-We started the LSTM notebook, but did not have enough time to validate and optimize hyperparameters.
-
-[LSTM Notebook](https://www.kaggle.com/code/pavfedotov/ethereum-price-prediction)

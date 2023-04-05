@@ -13,9 +13,10 @@ config["BLOCK_CONFIRMATIONS"] = 4 #faster
 ocean = Ocean(config)
 
 alice_private_key = os.getenv('REMOTE_TEST_PRIVATE_KEY1')
+
 alice_wallet = Wallet(ocean.web3, alice_private_key,
                        config["BLOCK_CONFIRMATIONS"], config["TRANSACTION_TIMEOUT"])
 
-datatoken = Datatoken(ocean.web3, "0x222F74ad94C3d9C1673bb43FE611c8E456082b7C")
+datatoken = Datatoken(ocean.web3, "0x96B72c17DbEDd6905326fccbEA48a931cE99581D")
 
 datatoken.mint("0xA54ABd42b11B7C97538CAD7C6A2820419ddF703E", ocean.to_wei(10), alice_wallet)

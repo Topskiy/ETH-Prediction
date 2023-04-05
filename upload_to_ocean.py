@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-URL = "https://arweave.net/WFpfNY0gXVxkTCT9aBTqgVlVWlY0WwpcA17G8sGlVSY"
-NAME = "ETH predictions 3"
+URL = "https://arweave.net/na9u74yh5gHXEeEwKW9FP7zFHvYdXIjqKPfAXsfhlLc"
+NAME = "ETH predictions 4"
 
 config = ExampleConfig.get_config("https://polygon-rpc.com") # points to Polygon mainnet
 config["BLOCK_CONFIRMATIONS"] = 4 #faster

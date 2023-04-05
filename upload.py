@@ -1,13 +1,15 @@
 """ Upload data"""
 import os
 from pybundlr import pybundlr
-from ocean_lib.example_config import ExampleConfig
+from dotenv import load_dotenv
+
 from ocean_lib.ocean.ocean import Ocean
 from ocean_lib.web3_internal.wallet import Wallet
-from dotenv import load_dotenv
+from ocean_lib.example_config import ExampleConfig
+
 load_dotenv()
 
-FILE_NAME = '/home/fedorovn19/github/ETH-Prediction/eth_predict.csv'
+FILE_NAME = './eth_predict.csv'
 
 alice_private_key = os.getenv('REMOTE_TEST_PRIVATE_KEY1')
 
